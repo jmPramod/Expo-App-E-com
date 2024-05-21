@@ -63,7 +63,7 @@ const Login = () => {
 
       if (createdSessionId) {
         await setActive!({ session: createdSessionId });
-        // router.back();
+        router.back();
       }
     } catch (error) {
       console.error('OAuth error', error);
